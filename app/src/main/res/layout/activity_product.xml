@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.reto1pizzeria.ProductActivity"
+    android:orientation="vertical"
+    android:background="@drawable/fondoreto1"
+    >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/grismenu"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center">
+
+        <ImageView
+            android:id="@+id/headerLogo"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:layout_marginRight="50sp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/headerImgHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home2"
+            android:layout_marginLeft="10sp"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:gravity="center"
+        >
+
+
+        <TextView
+            android:id="@+id/bodyTextWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Productos Pizzeria"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_id"
+            android:enabled="false"
+            android:visibility="gone"
+            android:inputType="text"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:layout_marginTop="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@color/griscard"
+            android:hint="@string/app_edittextnamehint"
+            android:inputType="text"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:padding="10sp"
+            android:layout_marginTop="10sp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextDescrip"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@color/griscard"
+            android:layout_marginTop="10sp"
+            android:hint="@string/app_edittextdescriptionhint"
+            android:inputType="text"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:padding="10sp"
+            >
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="45sp"
+                android:background="@color/griscard"
+                android:hint="@string/app_edittextpricehint"
+                android:inputType="number"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="15sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextStock"
+                android:layout_width="wrap_content"
+                android:layout_height="45sp"
+                android:background="@color/griscard"
+                android:layout_marginTop="10sp"
+                android:hint="@string/app_edittextcanthint"
+                android:inputType="number"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:padding="10sp"
+                >
+
+            </EditText>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:backgroundTint="@color/green"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/app_btnagregarproductext"
+            android:textSize="24sp"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="10sp">
+        </Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonGetFirebase"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:backgroundTint="@color/griscard"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:text="@string/app_btnVerFirebaseText"
+                android:textSize="24sp"
+                app:cornerRadius="10dp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="10sp">
+            </Button>
+
+            <Button
+                android:id="@+id/buttonGetSqlite"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:backgroundTint="@color/red"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/app_btnVerSQLText"
+                android:textSize="24sp"
+                app:cornerRadius="10dp"
+                android:layout_marginTop="5sp">
+            </Button>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSichronized"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:backgroundTint="@color/green"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/app_btnSyncFirebaseText"
+            android:textSize="24sp"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="5sp">
+        </Button>
+
+
+
+        <ListView
+            android:id="@+id/listViewProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/griscard"
+            android:layout_marginTop="10sp"
+            >
+
+        </ListView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footerImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fondopizzalovers3">
+    </LinearLayout>
+
+
+</LinearLayout>

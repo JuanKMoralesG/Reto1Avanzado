@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.reto1pizzeria.LoginActivity"
+    tools:ignore="MissingClass"
+    android:orientation="vertical"
+    android:background="@drawable/fondoreto1"
+    >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/grismenu"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center">
+
+        <ImageView
+            android:id="@+id/headerLogo"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:layout_marginRight="50sp"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/headerImgHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home2"
+            android:layout_marginLeft="10sp"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/loguinImg1"
+            android:layout_width="wrap_content"
+            android:layout_height="200sp"
+            android:src="@drawable/login"
+            >
+        </ImageView>
+
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@color/griscard"
+            android:hint="@string/app_edittextmailuserhint"
+            android:inputType="textEmailAddress"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="10sp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@color/griscard"
+            android:layout_marginTop="20sp"
+            android:hint="@string/app_edittextpasswordhint"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="10sp"
+            >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:backgroundTint="@color/green"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/app_btnlogintext"
+            android:textSize="24sp"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="20sp">
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/layoutForgetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <CheckBox
+                android:id="@+id/checkboxLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white">
+
+            </CheckBox>
+
+            <TextView
+                android:id="@+id/textRemerberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recuerdame"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textForgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Olvido su Contraseña?"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16sp"
+                android:layout_marginLeft="30sp"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:backgroundTint="@color/griscard"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:text="@string/app_btnregistertext"
+            android:textSize="24sp"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="10sp">
+        </Button>
+
+        <ImageView
+            android:id="@+id/loginImg2"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:src="@drawable/login2"
+            >
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footerImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fondopizzalovers3">
+    </LinearLayout>
+
+
+</LinearLayout>

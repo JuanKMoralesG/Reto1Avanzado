@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:background="?attr/selectableItemBackground"
+    android:radius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:hint="@string/hint_usuario"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="?attr/colorOnBackground"
+                android:layout_marginTop="10sp"/>
+
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="@string/hint_contraseña"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="?attr/colorOnBackground"
+                android:layout_marginTop="10sp"/>
+
+        </LinearLayout>
+
+        <!-- Botones de acción mejorados -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/buttonEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:text="@string/item_button_add"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="?attr/colorPrimary" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:text="@string/item_button_delete"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="?attr/colorError" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

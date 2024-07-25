@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "988621962736",
+    "project_id": "reto1nivelavanzadoappmoviles",
+    "storage_bucket": "reto1nivelavanzadoappmoviles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988621962736:android:4d929bda716d6a17fcb135",
+        "android_client_info": {
+          "package_name": "com.example.reto1pizzeria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnI-52V_QV9weABICkkkXieRVJPBFEIKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

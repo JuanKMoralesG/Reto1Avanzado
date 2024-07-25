@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:background="@color/grismenu"
+    android:radius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- Añadir imagen de producto -->
+        <ImageView
+            android:id="@+id/imageViewProductPedido"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Imagen del producto"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewNameItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/hint_name"
+                android:textColor="?attr/colorOnBackground"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDescripItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/hint_descrip"
+                android:textColor="?attr/colorOnBackground"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewPriceItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/hint_price"
+                android:textColor="?attr/colorOnBackground"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <!-- Botones de acción mejorados -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/buttonAddItem"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00F8F7F7"
+                android:src="@drawable/mas">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/buttonDeleteItem"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00F8F7F7"
+                android:src="@drawable/menos">
+
+            </ImageButton>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
